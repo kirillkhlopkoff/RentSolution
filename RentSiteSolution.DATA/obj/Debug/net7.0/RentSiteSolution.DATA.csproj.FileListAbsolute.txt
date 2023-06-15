@@ -1,0 +1,14 @@
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\bin\Debug\net7.0\RentSiteSolution.DATA.deps.json
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\bin\Debug\net7.0\RentSiteSolution.DATA.runtimeconfig.json
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\bin\Debug\net7.0\RentSiteSolution.DATA.dll
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\bin\Debug\net7.0\RentSiteSolution.DATA.pdb
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.csproj.AssemblyReference.cache
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.AssemblyInfoInputs.cache
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.AssemblyInfo.cs
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.csproj.CoreCompileInputs.cache
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.dll
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\refint\RentSiteSolution.DATA.dll
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.pdb
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\RentSiteSolution.DATA.genruntimeconfig.cache
+D:\work\web\RentSiteSolution\RentSiteSolution.DATA\obj\Debug\net7.0\ref\RentSiteSolution.DATA.dll

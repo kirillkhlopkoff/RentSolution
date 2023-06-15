@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClientMVCApartments</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" asp-append-version="true">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="~/css/animate.css" asp-append-version="true">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css" asp-append-version="true">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="~/css/themify-icons.css" asp-append-version="true">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="~/css/flaticon.css" asp-append-version="true">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css" asp-append-version="true">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="~/css/slick.css" asp-append-version="true">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="~/img/logo.png" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Apartments" asp-action="AllApartmentsList">Apartments</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="account-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="account-btn">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <form method="post" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="/">
+                                        <button type="submit" class="btn btn-link">Log Out</button>
+                                    </form>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="MyAccount">My Account</a>
+                                }
+                                else
+                                {
+                                    <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Login">Log In</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                                }
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-light">
+                @Html.Partial("_LeftMenu")
+                <div class="fixed-bottom bg-light">
+                    <!-- Футер боковой панели -->
+                    <button type="button" class="btn btn-danger">Выход</button>
+                </div>
+            </div>
+            <div class="col-9">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+
+        <footer class="border-top footer text-muted fixed-bottom bg-light">
+            <div class="container">
+                &copy; 2023 - RentSiteProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+        <!-- jquery plugins here-->
+        <!-- jquery -->
+        <script src="~/js/jquery-1.12.1.min.js"></script>
+        <!-- popper js -->
+        <script src="~/js/popper.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="~/js/bootstrap.min.js"></script>
+        <!-- easing js -->
+        <script src="~/js/jquery.magnific-popup.js"></script>
+        <!-- swiper js -->
+        <script src="~/js/swiper.min.js"></script>
+        <!-- swiper js -->
+        <script src="~/js/masonry.pkgd.js"></script>
+        <!-- particles js -->
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/jquery.nice-select.min.js"></script>
+        <!-- swiper js -->
+        <script src="~/js/slick.min.js"></script>
+        <script src="~/js/jquery.counterup.min.js"></script>
+        <script src="~/js/waypoints.min.js"></script>
+        <!-- custom js -->
+        <script src="~/js/custom.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

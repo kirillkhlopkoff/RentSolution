@@ -1,0 +1,33 @@
+﻿@using RentSiteSolution.DATA.Entity.Apartment;
+@model Apartment
+@{
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<h2>@Model.Title</h2>
+
+<a asp-controller="Apartments" asp-action="MyApartments">Back to List</a>
+
+<div>
+    <strong>Address:</strong> @Model.Address
+</div>
+<div>
+    <strong>Price:</strong> @Model.Price
+</div>
+<div>
+    <strong>Rooms:</strong> @Model.Rooms
+</div>
+<div>
+    <strong>Description:</strong> @Model.Description
+</div>
+<div>
+    <strong>City:</strong> @Model.City
+</div>
+<div>
+    <strong>Details:</strong> @Model.Details
+</div>
+
+@foreach (var photoUrl in Model.Photos)
+{
+    <img src="@photoUrl" alt="Photo" />
+}

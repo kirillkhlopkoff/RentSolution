@@ -45,7 +45,7 @@ namespace RentSiteSolution.Controllers
             _context.Apartments.Add(apartment);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("MyApartments", "Apartments");
+            return RedirectToAction("MyApartments", "ApartmentsShow");
         }
 
         // Метод для редактирования квартиры (GET)
@@ -99,9 +99,9 @@ namespace RentSiteSolution.Controllers
 
                 _context.Apartments.Update(existingApartment);
                 _context.SaveChanges();
-                return RedirectToAction("MyApartments", "Apartments");
+                return RedirectToAction("MyApartments", "ApartmentsShow");
             }
-            return RedirectToAction("ApartmentsEdit", "Apartments", new { id = apartment.Id });
+            return RedirectToAction("Edit", "ApartmentsManage", new { id = apartment.Id });
         }
 
         // Метод для удаления квартиры
@@ -120,7 +120,7 @@ namespace RentSiteSolution.Controllers
                 _context.Apartments.Remove(apartment);
                 _context.SaveChanges();
             }
-            return RedirectToAction("MyApartments", "Apartments");
+            return RedirectToAction("MyApartments", "ApartmentsShow");
         }
     }
 }

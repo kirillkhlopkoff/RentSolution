@@ -1,0 +1,84 @@
+﻿@using RentSiteSolution.DATA.Entity.Apartment;
+@using RentSiteSolution.DATA.Enum;
+@model Apartment
+@{
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Address" class="control-label"></label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Rooms" class="control-label"></label>
+        <input asp-for="Rooms" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="City" class="control-label">City</label>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="cityDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                -- Select City --
+            </button>
+            <div class="dropdown-menu" aria-labelledby="cityDropdown">
+                @foreach (var city in Enum.GetValues(typeof(City)))
+                {
+                    <button class="dropdown-item" type="button" onclick="selectCity('@city.ToString()')">@city</button>
+                }
+            </div>
+        </div>
+        <input id="selectedCity" name="City" type="hidden" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Details" class="control-label"></label>
+        <input asp-for="Details" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Photos</label>
+        <input type="text" name="Photos[0]" class="form-control" /> <!-- Первая ссылка на фотографию -->
+        <br />
+        <input type="text" name="Photos[1]" class="form-control" /> <!-- Вторая ссылка на фотографию -->
+        <br />
+        <input type="text" name="Photos[2]" class="form-control" /> <!-- Третья ссылка на фотографию -->
+        <br />
+        <input type="text" name="Photos[3]" class="form-control" />
+        <br />
+        <input type="text" name="Photos[4]" class="form-control" />
+        <br />
+        <input type="text" name="Photos[5]" class="form-control" />
+        <br />
+        <input type="text" name="Photos[6]" class="form-control" />
+        <br />
+        <input type="text" name="Photos[7]" class="form-control" />
+    </div>
+    @*<div class="form-group">
+        <label asp-for="MainPhoto" class="control-label">Photos</label>
+        <input asp-for="MainPhoto" class="form-control" />
+    </div>*@
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+</form>
+
+<script>
+    function selectCity(city) {
+        document.getElementById('selectedCity').value = city;
+        document.getElementById('cityDropdown').innerText = city;
+    }
+
+    document.getElementById('createApartmentForm').addEventListener('submit', function () {
+        // Другой возможный код обработки формы, например валидация
+    });
+</script>

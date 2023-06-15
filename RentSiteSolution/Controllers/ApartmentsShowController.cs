@@ -66,17 +66,5 @@ namespace RentSiteSolution.Controllers
             var apartment = _context.Apartments.FirstOrDefault(a => a.Id == id);
             return View(apartment);
         }
-
-        /*// Метод для отображения страницы редактирования квартиры
-        [HttpGet]
-        public IActionResult ApartmentsEdit(int id)
-        {
-            var apartment = _context.Apartments.Find(id);
-            if (apartment == null)
-            {
-                return NotFound();
-            }
-            return View(apartment);
-        }*/
     }
 }

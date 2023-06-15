@@ -1,0 +1,78 @@
+﻿@model IEnumerable<RentSiteSolution.DATA.Entity.Apartment.Apartment>
+@{
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+@{
+    ViewData["Title"] = "My Apartments";
+}
+
+
+<div class="d-flex flex-column flex-md-row">
+
+    <p>
+        <a asp-controller="ApartmentsManage" asp-action="Create">Create New Apartment</a>
+    </p>
+    <div class="text-center p-8">
+        <h1>@ViewData["Title"]</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rooms)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MainPhoto)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var apartment in Model)
+                {
+                    <tr>
+                        <th>
+                            @Html.DisplayFor(modelItem => apartment.Title)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(modelItem => apartment.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => apartment.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => apartment.Rooms)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => apartment.Description)
+                        </td>
+                        <td>
+                            <img src="@apartment.MainPhoto" alt="Main Photo" width="100" height="100" />
+                        </td>
+                        <td>
+                            <a asp-controller="Apartments" asp-action="ApartmentDetails" asp-route-id="@apartment.Id">Details</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Apartments" asp-action="ApartmentsEdit" asp-route-id="@apartment.Id">Edit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+

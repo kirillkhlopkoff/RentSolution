@@ -21,9 +21,4 @@
     <ProjectReference Include="..\RentSiteSolution.DATA\RentSiteSolution.DATA.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\ApartmentsShow\" />
-    <Folder Include="Views\ApartmentsManage\" />
-  </ItemGroup>
-
 </Project>

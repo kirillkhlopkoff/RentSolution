@@ -36,6 +36,9 @@
                     @*<th>
                         @Html.DisplayNameFor(model => model.MainPhoto)
                     </th>*@
+                    <th>
+                    MainPhoto
+                    </th>
                     <th></th>
                 </tr>
             </thead>
@@ -58,9 +61,13 @@
                         <td>
                             @Html.DisplayFor(modelItem => apartment.Description)
                         </td>
-                        @*<td>
-                            <img src="@apartment.MainPhoto" alt="Main Photo" width="100" height="100" />
-                        </td>*@
+                        <td>
+                            @if (apartment.Photos.Any())
+                            {
+                                var mainPhoto = apartment.Photos.First();
+                                <img src="@Url.Content("~/photos/" + mainPhoto.Name)" alt="@mainPhoto.Name" width="200" />
+                            }
+                        </td>
                         <td>
                             <a asp-controller="ApartmentsShow" asp-action="ApartmentDetails" asp-route-id="@apartment.Id">Details</a>
                         </td>

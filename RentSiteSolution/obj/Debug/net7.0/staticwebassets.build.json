@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E2a6Drh2ADkwMPOPRG/iv6Lxyk5cgSt13ZxnVVDdkpw=",
+  "Hash": "uELyRPPgmkgXEEoJqB0elByo7EpapAan2XiZyORF4ZU=",
   "Source": "RentSiteSolution",
   "BasePath": "_content/RentSiteSolution",
   "Mode": "Default",
@@ -2414,6 +2414,23 @@
       "OriginalItemSpec": "wwwroot\\photos\\20220810164229_1.jpg"
     },
     {
+      "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\32qp1gcr.aqu_756281458904605.jpg",
+      "SourceId": "RentSiteSolution",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\",
+      "BasePath": "_content/RentSiteSolution",
+      "RelativePath": "photos/32qp1gcr.aqu_756281458904605.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\32qp1gcr.aqu_756281458904605.jpg"
+    },
+    {
       "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\blmeb15b.s2z_fe62c760a3c84349d83cf4c935207e3e.jpg",
       "SourceId": "RentSiteSolution",
       "SourceType": "Discovered",
@@ -2448,6 +2465,40 @@
       "OriginalItemSpec": "wwwroot\\photos\\ea0d4dnu.sbo_depositphotos_10865041-stock-photo-goat.jpg"
     },
     {
+      "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png",
+      "SourceId": "RentSiteSolution",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\",
+      "BasePath": "_content/RentSiteSolution",
+      "RelativePath": "photos/lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png"
+    },
+    {
+      "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg",
+      "SourceId": "RentSiteSolution",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\",
+      "BasePath": "_content/RentSiteSolution",
+      "RelativePath": "photos/p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg"
+    },
+    {
       "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\photo_2023-02-18_21-44-03.jpg",
       "SourceId": "RentSiteSolution",
       "SourceType": "Discovered",
@@ -2480,6 +2531,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photos\\prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg"
+    },
+    {
+      "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\photos\\uq2d5ovj.2cc_756281458904605.jpg",
+      "SourceId": "RentSiteSolution",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\",
+      "BasePath": "_content/RentSiteSolution",
+      "RelativePath": "photos/uq2d5ovj.2cc_756281458904605.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\uq2d5ovj.2cc_756281458904605.jpg"
     },
     {
       "Identity": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\wwwroot\\sass\\_",

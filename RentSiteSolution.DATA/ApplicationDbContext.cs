@@ -19,17 +19,15 @@ namespace RentSiteSolution.DATA
         }
         public DbSet<Apartment> Apartments { get; set; }
         public DbSet<Photo> Photos { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            /*// Определение столбца Photos в таблице Apartments
             modelBuilder.Entity<Apartment>()
-                .Property(a => a.Photos)
-                .HasConversion(
-                    v => string.Join(";", v),  // Преобразование массива в строку с разделителем ";"
-                    v => v.Split(";", StringSplitOptions.None)); // Преобразование строки в массив с разделителем ";"*/
-        }
+                .HasOne(a => a.MainPhoto)
+                .WithMany()
+                .HasForeignKey(a => a.MainPhotoId);
+        }*/
 
     }
 }

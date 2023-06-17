@@ -28,6 +28,13 @@
 </div>
 
 
+<h3>Main Photo:</h3>
+@if (Model.Photos.Any())
+{
+    var mainPhoto = Model.Photos.First();
+    <img src="@Url.Content("~/photos/" + mainPhoto.Name)" alt="@mainPhoto.Name" width="200" />
+}
+
 <h3>Photos:</h3>
 @foreach (var photo in Model.Photos)
 {

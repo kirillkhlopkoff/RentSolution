@@ -19,7 +19,7 @@ namespace RentSiteSolution.Controllers
         }
         public IActionResult AllApartmentsList(string title, int? minRooms, int? maxRooms, int? minPrice, int? maxPrice)
         {
-            var query = _context.Apartments.AsQueryable();
+            var query = _context.Apartments.Include(a => a.Photos).AsQueryable();
 
             // Применение фильтра по заголовку (названию) квартиры
             if (!string.IsNullOrEmpty(title))
@@ -57,14 +57,21 @@ namespace RentSiteSolution.Controllers
         public async Task<IActionResult> MyApartments()
         {
             var currentUser = await _userManager.GetUserAsync(User);
-            var userApartments = _context.Apartments.Where(a => a.UserId == currentUser.Id).ToList();
+            /*var userApartments = _context.Apartments.Where(a => a.UserId == currentUser.Id).ToList();*/
+            var userApartments = _context.Apartments
+        .Include(a => a.Photos) // Включаем все фотографии
+        .Where(a => a.UserId == currentUser.Id)
+        .ToList();
             return View(userApartments);
         }
 
         // Метод для отображения подробной информации о квартире
         public IActionResult ApartmentDetails(int id)
         {
-            var apartment = _context.Apartments.Include(a => a.Photos).FirstOrDefault(a => a.Id == id);/*_context.Apartments.FirstOrDefault(a => a.Id == id);*/
+            var apartment = _context.Apartments
+        /*.Include(a => a.MainPhoto) // Включаем главную фотографию*/
+        .Include(a => a.Photos) // Включаем все фотографии
+        .FirstOrDefault(a => a.Id == id);
             return View(apartment);
         }
     }

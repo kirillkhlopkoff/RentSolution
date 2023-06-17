@@ -2224,6 +2224,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\20220810164229_1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\32qp1gcr.aqu_756281458904605.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>RentSiteSolution</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RentSiteSolution</BasePath>
+      <RelativePath>photos/32qp1gcr.aqu_756281458904605.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\32qp1gcr.aqu_756281458904605.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\blmeb15b.s2z_fe62c760a3c84349d83cf4c935207e3e.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>RentSiteSolution</SourceId>
@@ -2256,6 +2272,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\ea0d4dnu.sbo_depositphotos_10865041-stock-photo-goat.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>RentSiteSolution</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RentSiteSolution</BasePath>
+      <RelativePath>photos/lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\lfy2bgm2.03j_DALL·E 2023-04-27 21.37.02 - создай изображение римского легионера в стиле векторной графики.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>RentSiteSolution</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RentSiteSolution</BasePath>
+      <RelativePath>photos/p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\p4emtqhr.o5z_prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\photo_2023-02-18_21-44-03.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>RentSiteSolution</SourceId>
@@ -2287,6 +2335,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\prodazha-dvuhkomnatnaya-kvartira-s-mebelyu-i-tehnikoy-novyy-remont-zhk-suvorov-irpen-a10410-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\uq2d5ovj.2cc_756281458904605.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>RentSiteSolution</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RentSiteSolution</BasePath>
+      <RelativePath>photos/uq2d5ovj.2cc_756281458904605.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\photos\uq2d5ovj.2cc_756281458904605.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\RentSiteSolution.bundle.scp.css))">
       <SourceType>Package</SourceType>

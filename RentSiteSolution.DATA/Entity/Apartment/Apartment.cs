@@ -20,6 +20,9 @@ namespace RentSiteSolution.DATA.Entity.Apartment
         public int Rooms { get; set; }
         public string Details { get; set; }
 
+        /*public int? MainPhotoId { get; set; } // Id главной фотографии
+        public Photo MainPhoto { get; set; } // Навигационное свойство главной фотографии
+        public string MainPhotoUrl => MainPhoto != null ? MainPhoto.Url : string.Empty;*/
         public List<Photo> Photos { get; set; } = new List<Photo>(); // Навигационное свойство для фотографий
 
 

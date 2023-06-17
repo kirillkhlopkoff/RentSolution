@@ -5,7 +5,7 @@
 namespace RentSiteSolution.DATA.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class withoutphoto : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -24,8 +24,7 @@ namespace RentSiteSolution.DATA.Migrations
                     City = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Rooms = table.Column<int>(type: "int", nullable: false),
-                    Details = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Photos = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Details = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

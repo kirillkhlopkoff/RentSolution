@@ -12,8 +12,8 @@ using RentSiteSolution.DATA;
 namespace RentSiteSolution.DATA.Migrations.UsersDb
 {
     [DbContext(typeof(UsersDbContext))]
-    [Migration("20230615111855_InitialUser")]
-    partial class InitialUser
+    [Migration("20230616164236_sgdfg")]
+    partial class sgdfg
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

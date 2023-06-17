@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RentSiteSolution.DATA;
 using RentSiteSolution.DATA.Entity.Identity;
 
@@ -63,7 +64,7 @@ namespace RentSiteSolution.Controllers
         // Метод для отображения подробной информации о квартире
         public IActionResult ApartmentDetails(int id)
         {
-            var apartment = _context.Apartments.FirstOrDefault(a => a.Id == id);
+            var apartment = _context.Apartments.Include(a => a.Photos).FirstOrDefault(a => a.Id == id);/*_context.Apartments.FirstOrDefault(a => a.Id == id);*/
             return View(apartment);
         }
     }

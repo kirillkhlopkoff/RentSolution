@@ -27,7 +27,10 @@
     <strong>Details:</strong> @Model.Details
 </div>
 
-@foreach (var photoUrl in Model.Photos)
+
+<h3>Photos:</h3>
+@foreach (var photo in Model.Photos)
 {
-    <img src="@photoUrl" alt="Photo" />
+    @*<img src="@Url.Content(photo.Url)" alt="@photo.Name" width="200" />*@
+    <img src="@Url.Content("~/photos/" + photo.Name)" alt="@photo.Name" width="200">
 }

@@ -20,23 +20,8 @@ namespace RentSiteSolution.DATA.Entity.Apartment
         public int Rooms { get; set; }
         public string Details { get; set; }
 
-        // 
-        public string[] Photos { get; set; } = new string[8]; // Массив строк-ссылок на фотографии
+        public List<Photo> Photos { get; set; } = new List<Photo>(); // Навигационное свойство для фотографий
 
-        public string MainPhoto
-        {
-            get { return Photos?.FirstOrDefault(); }
-        }
-
-
-        /*public List<string> Photos { get; set; } = new List<string>(); // массив загруженных файлов
-        public List<IFormFile> PhotoFiles { get; set; }
-
-        [NotMapped]
-        public string MainPhoto
-        {
-            get { return Photos?.FirstOrDefault(); }
-        }*/
 
     }
 }

@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/work/web/RentSiteSolution/RentSiteSolution/Views/ApartmentsManage/AddPhoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c01hbmFnZVxBZGRQaG90by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/web/RentSiteSolution/RentSiteSolution/Views/ApartmentsManage/AddPhotos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c01hbmFnZVxBZGRQaG90b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/work/web/RentSiteSolution/RentSiteSolution/Views/ApartmentsManage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c01hbmFnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

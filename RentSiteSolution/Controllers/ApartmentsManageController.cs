@@ -11,10 +11,13 @@ namespace RentSiteSolution.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
 
-        public ApartmentsManageController(ApplicationDbContext context, UserManager<User> userManager)
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public ApartmentsManageController(ApplicationDbContext context, UserManager<User> userManager, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
             _userManager = userManager;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         // Метод для вывода списка всех квартир // исправить на вывод квартир данного пользователя
@@ -46,6 +49,57 @@ namespace RentSiteSolution.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("MyApartments", "ApartmentsShow");
+        }
+
+        // Метод для добавления фотографий к квартире (GET)
+        public IActionResult AddPhoto(int id)
+        {
+            var apartment = _context.Apartments.Find(id);
+            if (apartment == null)
+            {
+                return NotFound();
+            }
+            return View(apartment);
+        }
+
+        // Метод для добавления фотографий к квартире (POST)
+        [HttpPost]
+        public async Task<IActionResult> AddPhoto(int id, IFormFileCollection files)
+        {
+            var apartment = _context.Apartments.Find(id);
+            if (apartment == null)
+            {
+                return NotFound();
+            }
+
+            foreach (var file in files)
+            {
+                if (file.Length > 0)
+                {
+                    var uniqueFileName = Path.GetRandomFileName() + "_" + file.FileName;
+                    var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "photos"); // Путь к папке "photos"
+
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+
+                    var photo = new Photo
+                    {
+                        Name = uniqueFileName,
+                        Url = filePath,
+                        ApartmentId = apartment.Id
+                    };
+
+                    _context.Photos.Add(photo);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Edit", new { id = apartment.Id });
         }
 
         // Метод для редактирования квартиры (GET)

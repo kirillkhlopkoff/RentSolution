@@ -11,8 +11,8 @@ using RentSiteSolution.DATA;
 namespace RentSiteSolution.DATA.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230615111743_Initial")]
-    partial class Initial
+    [Migration("20230616164005_withoutphoto")]
+    partial class withoutphoto
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,10 +49,6 @@ namespace RentSiteSolution.DATA.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Details")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Photos")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

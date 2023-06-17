@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RentSiteSolution.DATA.Migrations.UsersDb
 {
     /// <inheritdoc />
-    public partial class InitialUser : Migration
+    public partial class sgdfg : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

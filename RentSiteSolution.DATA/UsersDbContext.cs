@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RentSiteSolution.DATA
 {
-    public class UsersDbContext : IdentityDbContext<User, Role, string>
+    /*public class UsersDbContext : IdentityDbContext<User, Role, string>
     {
         private readonly IConfiguration _configuration;
         public UsersDbContext(DbContextOptions<UsersDbContext> options, IConfiguration configuration) : base(options)
@@ -18,9 +18,9 @@ namespace RentSiteSolution.DATA
             _configuration = configuration;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        *//*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
-        }
-    }
+            optionsBuilder.UseMySql(_configuration.GetConnectionString("DefaultConnection"));
+        }*//*
+    }*/
 }

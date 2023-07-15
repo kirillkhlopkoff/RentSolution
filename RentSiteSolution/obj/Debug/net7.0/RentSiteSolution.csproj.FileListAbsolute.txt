@@ -406,3 +406,9 @@ D:\work\web\RentSiteSolution\RentSiteSolution\obj\Debug\net7.0\refint\RentSiteSo
 D:\work\web\RentSiteSolution\RentSiteSolution\obj\Debug\net7.0\RentSiteSolution.pdb
 D:\work\web\RentSiteSolution\RentSiteSolution\obj\Debug\net7.0\RentSiteSolution.genruntimeconfig.cache
 D:\work\web\RentSiteSolution\RentSiteSolution\obj\Debug\net7.0\ref\RentSiteSolution.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\refs\Microsoft.Extensions.Identity.Core.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\refs\Microsoft.Extensions.Identity.Stores.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\MySqlConnector.dll
+D:\work\web\RentSiteSolution\RentSiteSolution\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll

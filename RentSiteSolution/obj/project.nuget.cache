@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e4Apf6ivmICOeKFxjjE+dAGAMrMk+8p2LsfLxIXjuXvSSYtMe8TprvXuw18B8Dg+LXf2KmwsacEUe1t3u7/HDw==",
+  "dgSpecHash": "UOv6pfZ/RgzaQuKukFQRFlixvLU8lrmHqw4saWtbMWh2EFZ4qQivDSAcPVU7rvAElFI99y8MANQ6p5+ngD90sg==",
   "success": true,
   "projectFilePath": "D:\\work\\web\\RentSiteSolution\\RentSiteSolution\\RentSiteSolution.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,8 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
